@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import './Navbar.css'
+import photo from "../assets/photo1.jpg";
 
 const links = ['About', 'Skills', 'Projects', 'Experience', 'Education', 'Contact']
 
@@ -24,7 +25,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-inner container">
         <div className="nav-logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <img src="/src/assets/photo1.jpg" alt="Gayathri R" className="nav-photo" />
+          <img src={photo} alt="Gayathri R" className="nav-photo" />
           <div className="nav-logo-text">
             <span className="nav-name">GAYATHRI R</span>
             <span className="nav-role">Aspiring AI/ML Engineer</span>

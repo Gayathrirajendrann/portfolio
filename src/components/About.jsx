@@ -1,4 +1,5 @@
 import './About.css'
+import photo from "../assets/photo1.jpg";
 
 const stats = [
   { value: '12+', label: 'Projects Built' },
@@ -58,7 +59,7 @@ export default function About() {
             <div className="avatar-container">
               <div className="avatar-ring" />
               <div className="avatar-inner">
-                <img src="/src/assets/photo1.jpg" alt="Gayathri R" className="avatar-photo" />
+                <img src={photo} alt="Gayathri R" className="avatar-photo" />
               </div>
               <div className="avatar-badge">AI Engineer</div>
             </div>

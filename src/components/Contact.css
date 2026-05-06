@@ -1,0 +1,113 @@
+.contact-section { background: linear-gradient(180deg, transparent, rgba(124,58,237,0.05) 50%, transparent); }
+
+.contact-orb {
+  position: absolute;
+  width: 500px; height: 500px;
+  background: rgba(124,58,237,0.1);
+  top: -100px; right: -150px;
+  border-radius: 50%; filter: blur(100px);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-cta-text h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+.contact-cta-text p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 0.97rem;
+  margin-bottom: 32px;
+}
+
+.open-to { display: flex; flex-direction: column; gap: 12px; }
+
+.open-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.open-check {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: rgba(124,58,237,0.15);
+  border: 1px solid rgba(124,58,237,0.4);
+  color: #a78bfa;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+.contact-card { padding: 28px; }
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-method:last-of-type { border-bottom: none; }
+
+.cm-icon {
+  width: 46px; height: 46px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.email-icon { background: rgba(244,114,182,0.12); color: #f9a8d4; border: 1px solid rgba(244,114,182,0.2); }
+.phone-icon { background: rgba(34,197,94,0.12); color: #86efac; border: 1px solid rgba(34,197,94,0.2); }
+.li-icon { background: rgba(59,130,246,0.12); color: #93c5fd; border: 1px solid rgba(59,130,246,0.2); }
+.gh-icon { background: rgba(255,255,255,0.06); color: var(--text-muted); border: 1px solid var(--border); }
+
+.cm-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.cm-value {
+  font-size: 0.88rem;
+  color: var(--text);
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.cm-copy {
+  margin-left: auto;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.contact-email-btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 860px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 500px) {
+  .cm-copy { display: none; }
+}
